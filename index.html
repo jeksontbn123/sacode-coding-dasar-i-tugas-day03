@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies aleart popup - Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="showmodal()">
+    <div id="modalbox">
+        <img src="img/Untitled-1.png" alt="cookies">
+        <p>We us cookies to optimize user experience and content</p>
+        <button type="button" onclick="closeModal()">Accept</button>
+        <img src="img/x.PNG" class="close-icon" onclick="closeModal()">
+
+    </div>
+
+    <script>
+        let modalBox = document.getElementById("modalbox");
+
+        function showmodal() {
+            setTimeout(() => {
+                modalBox.style.display = "block";
+            }, 3000)
+        }
+
+        function closeModal() {
+            modalBox.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
